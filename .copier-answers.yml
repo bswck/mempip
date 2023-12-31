@@ -1,0 +1,19 @@
+_commit: 41a2d47
+_src_path: gh:bswck/skeleton
+author_username: bswck
+docs: true
+docs_slug: mempip
+email_address: bswck.dev@gmail.com
+github_username: bswck
+license_name: MIT
+org_full_name: Bartosz Sławecki
+package_name: mempip
+project_description: Install Python packages into memory.
+publish_on_pypi: true
+pypi_project_description: Install Python packages into memory.
+pypi_project_name: mempip
+python_version: '3.8'
+repo_name: mempip
+tests: true
+use_precommit: true
+visibility: public
