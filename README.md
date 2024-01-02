@@ -1,13 +1,13 @@
 
-# mempip [![skeleton](https://img.shields.io/badge/41a2d47-skeleton?label=%F0%9F%92%80%20bswck/skeleton&labelColor=black&color=grey&link=https%3A//github.com/bswck/skeleton)](https://github.com/bswck/skeleton/tree/41a2d47)
-[![Package version](https://img.shields.io/pypi/v/mempip?label=PyPI)](https://pypi.org/project/mempip/)
+# mempip [![skeleton](https://img.shields.io/badge/4714773-skeleton?label=%F0%9F%92%80%20bswck/skeleton&labelColor=black&color=grey&link=https%3A//github.com/bswck/skeleton)](https://github.com/bswck/skeleton/tree/4714773) [![Package version](https://img.shields.io/pypi/v/mempip?label=PyPI)](https://pypi.org/project/mempip/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/mempip.svg?logo=python&label=Python)](https://pypi.org/project/mempip/)
-
 [![Tests](https://github.com/bswck/mempip/actions/workflows/test.yml/badge.svg)](https://github.com/bswck/mempip/actions/workflows/test.yml)
+[![Documentation Status](https://readthedocs.org/projects/mempip/badge/?version=latest)](https://mempip.readthedocs.io/en/latest/?badge=latest)
 [![Coverage](https://coverage-badge.samuelcolvin.workers.dev/bswck/mempip.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/mempip)
+[![License](https://img.shields.io/github/license/bswck/mempip.svg?label=License)](https://github.com/bswck/mempip/blob/HEAD/LICENSE)
+
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![License](https://img.shields.io/github/license/bswck/mempip.svg?label=License)](https://github.com/bswck/mempip/blob/HEAD/LICENSE)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
 Install Python packages into memory.
@@ -31,9 +31,9 @@ poetry add mempip
 ## For contributors
 
 <!--
-This section was generated from bswck/skeleton@41a2d47.
+This section was generated from bswck/skeleton@4714773.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/41a2d47/project/README.md.jinja
+https://github.com/bswck/skeleton/tree/4714773/project/README.md.jinja
 -->
 
 > [!Note]

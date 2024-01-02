@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@41a2d47.
+# This file was generated from bswck/skeleton@4714773.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/41a2d47/project/.gitignore.jinja
+# https://github.com/bswck/skeleton/tree/4714773/project/.gitignore.jinja
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

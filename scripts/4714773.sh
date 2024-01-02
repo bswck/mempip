@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # (C) 2023–present Bartosz Sławecki (bswck)
 #
-# Interact with bswck/skeleton (current version: https://github.com/bswck/skeleton/tree/41a2d47).
+# Interact with bswck/skeleton (current version: https://github.com/bswck/skeleton/tree/4714773).
 #
-# This file was generated from bswck/skeleton@41a2d47.
+# This file was generated from bswck/skeleton@4714773.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/41a2d47/project/scripts/%7B%7Bsref%7D%7D.sh.jinja
+# https://github.com/bswck/skeleton/tree/4714773/project/scripts/%7B%7Bsref%7D%7D.sh.jinja
 #
 # Usage:
 #
@@ -22,7 +22,7 @@
 # at the same time.
 
 # shellcheck disable=SC2005
-# Automatically copied from https://github.com/bswck/skeleton/tree/41a2d47/handle-task-event.sh
+# Automatically copied from https://github.com/bswck/skeleton/tree/4714773/handle-task-event.sh
 setup_gh() {
     echo "Calling GitHub setup hooks..."
     supply_smokeshow_key
@@ -117,14 +117,12 @@ after_update_algorithm() {
     fi
     redis-cli del "$PROJECT_PATH_KEY" > /dev/null 2>&1
     redis-cli del "$NEW_REF_KEY" > /dev/null 2>&1
-    echo "Press ENTER to commit the changes or CTRL+C to abort."
-    read -r || exit 1
     git commit --no-verify -m "$COMMIT_MSG" -m "$REVISION_PARAGRAPH"
     setup_gh
 }
 
 main() {
-    export LAST_REF="41a2d47"
+    export LAST_REF="4714773"
     export PROJECT_PATH_KEY="$$_skeleton_project_path"
     export NEW_REF_KEY="$$_skeleton_new_ref"
     export LAST_LICENSE_NAME="MIT"
