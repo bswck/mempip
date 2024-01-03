@@ -1,7 +1,7 @@
 <!--
-This file was generated from bswck/skeleton@4714773.
+This file was generated from bswck/skeleton@030de09.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/4714773/fragments/contributing.md
+https://github.com/bswck/skeleton/tree/030de09/fragments/contributing.md
 -->
 # Contributing to [mempip](https://github.com/bswck/mempip) 🎉
 Contributions are very welcome. 🚀
@@ -46,9 +46,9 @@ Ready to contribute? Here's a quick guide on how to set up mempip and make a cha
 
 
 <!--
-This section was generated from bswck/skeleton@4714773.
+This section was generated from bswck/skeleton@030de09.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/4714773/fragments/guide.md
+https://github.com/bswck/skeleton/tree/030de09/fragments/guide.md
 -->
 
 > [!Note]

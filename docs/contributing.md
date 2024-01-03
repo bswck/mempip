@@ -1,8 +1,8 @@
 
 <!--
-This file was generated from bswck/skeleton@4714773.
+This file was generated from bswck/skeleton@030de09.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/4714773/project/%23%25%20if%20docs%20%25%23docs%23%25%20endif%20%25%23/contributing.md.jinja
+https://github.com/bswck/skeleton/tree/030de09/project/%23%25%20if%20docs%20%25%23docs%23%25%20endif%20%25%23/contributing.md.jinja
 -->
 # Contributing to [mempip](https://github.com/bswck/mempip) 🎉
 Contributions are very welcome. 🚀
@@ -47,9 +47,9 @@ Ready to contribute? Here's a quick guide on how to set up mempip and make a cha
 
 
 <!--
-This section was generated from bswck/skeleton@4714773.
+This section was generated from bswck/skeleton@030de09.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/4714773/project/%23%25%20if%20docs%20%25%23docs%23%25%20endif%20%25%23/contributing.md.jinja
+https://github.com/bswck/skeleton/tree/030de09/project/%23%25%20if%20docs%20%25%23docs%23%25%20endif%20%25%23/contributing.md.jinja
 -->
 
 !!! Note

@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@4714773.
+# This file was generated from bswck/skeleton@030de09.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/4714773/project/%23%25%20if%20docs%20%25%23mkdocs.yml%23%25%20endif%20%25%23.jinja
+# https://github.com/bswck/skeleton/tree/030de09/project/%23%25%20if%20docs%20%25%23mkdocs.yml%23%25%20endif%20%25%23.jinja
 
 site_name: "mempip"
 site_description: "Install Python packages into memory."

@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@4714773.
+# This file was generated from bswck/skeleton@030de09.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/4714773/project/pyproject.toml.jinja
+# https://github.com/bswck/skeleton/tree/030de09/project/pyproject.toml.jinja
 
 [tool.poetry]
 name = "mempip"
@@ -19,16 +19,16 @@ Distribution = "https://pypi.org/project/mempip/"
 Coverage = "https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/mempip"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<=3.12"
+python = ">=3.8,<3.13"
 
 [tool.poetry.group.dev.dependencies]
 
 [tool.poetry.group.dev-skeleton.dependencies]
-# This dependency group was generated from bswck/skeleton@4714773.
+# This dependency group was generated from bswck/skeleton@030de09.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/4714773/pyproject.toml
+# https://github.com/bswck/skeleton/tree/030de09/pyproject.toml
 mypy = "^1.7.0"
-ruff = "^0.1.2"
+ruff = "^0.1.11"
 towncrier = "^23.11.0"
 pytest = "^7.4.3"
 coverage = "^7.3.2"
@@ -36,6 +36,7 @@ poethepoet = "^0.24.3"
 pre-commit = "^3.5.0"
 smokeshow = "^0.4.0"
 
+keyring = "^24.3.0"
 [tool.poetry.group.docs]
 optional = true
 
@@ -47,7 +48,7 @@ mkdocstrings = { version = ">=0.19.0", extras = ["python"] }
 [tool.poe.tasks]
 test = "pytest -v"
 lint = "ruff check ."
-skeleton = "scripts/4714773.sh"
+skeleton = "scripts/skeleton.030de09.bash"
 check = [
     { ref="test" },
     { ref="lint" },

@@ -1,6 +1,6 @@
 
-# mempip [![skeleton](https://img.shields.io/badge/4714773-skeleton?label=%F0%9F%92%80%20bswck/skeleton&labelColor=black&color=grey&link=https%3A//github.com/bswck/skeleton)](https://github.com/bswck/skeleton/tree/4714773) [![Package version](https://img.shields.io/pypi/v/mempip?label=PyPI)](https://pypi.org/project/mempip/)
-[![Supported Python versions](https://img.shields.io/pypi/pyversions/mempip.svg?logo=python&label=Python)](https://pypi.org/project/mempip/)
+# mempip [![skeleton](https://img.shields.io/badge/030de09-skeleton?label=%F0%9F%92%80%20bswck/skeleton&labelColor=black&color=grey&link=https%3A//github.com/bswck/skeleton)](https://github.com/bswck/skeleton/tree/030de09) [![Supported Python versions](https://img.shields.io/pypi/pyversions/mempip.svg?logo=python&label=Python)](https://pypi.org/project/mempip/) [![Package version](https://img.shields.io/pypi/v/mempip?label=PyPI)](https://pypi.org/project/mempip/)
+
 [![Tests](https://github.com/bswck/mempip/actions/workflows/test.yml/badge.svg)](https://github.com/bswck/mempip/actions/workflows/test.yml)
 [![Documentation Status](https://readthedocs.org/projects/mempip/badge/?version=latest)](https://mempip.readthedocs.io/en/latest/?badge=latest)
 [![Coverage](https://coverage-badge.samuelcolvin.workers.dev/bswck/mempip.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/mempip)
@@ -31,9 +31,9 @@ poetry add mempip
 ## For contributors
 
 <!--
-This section was generated from bswck/skeleton@4714773.
+This section was generated from bswck/skeleton@030de09.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/4714773/fragments/readme.md
+https://github.com/bswck/skeleton/tree/030de09/fragments/readme.md
 -->
 
 !!! Note
