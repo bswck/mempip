@@ -1,7 +1,7 @@
 <!--
-This file was generated from bswck/skeleton@0.0.2rc-108-g243acc3.
+This file was generated from bswck/skeleton@0.0.2rc-109-gb0ec19a.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/0.0.2rc-108-g243acc3/fragments/contributing.md
+https://github.com/bswck/skeleton/tree/0.0.2rc-109-gb0ec19a/fragments/contributing.md
 -->
 # Contributing to [mempip](https://github.com/bswck/mempip) 🎉
 Contributions are very welcome. 🚀
@@ -46,9 +46,9 @@ Ready to contribute? Here's a quick guide on how to set up mempip and make a cha
 
 
 <!--
-This section was generated from bswck/skeleton@0.0.2rc-108-g243acc3.
+This section was generated from bswck/skeleton@0.0.2rc-109-gb0ec19a.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/0.0.2rc-108-g243acc3/fragments/guide.md
+https://github.com/bswck/skeleton/tree/0.0.2rc-109-gb0ec19a/fragments/guide.md
 -->
 > [!Note]
 > If you use Windows, it is highly recommended to complete the installation in the way presented below through [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install).
