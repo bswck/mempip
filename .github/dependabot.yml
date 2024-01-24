@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@0.0.2rc-111-g28ccb08.
+# This file was generated from bswck/skeleton@0.0.2rc-112-ga5e885b.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-111-g28ccb08/project/.github/dependabot.yml.jinja
+# https://github.com/bswck/skeleton/tree/0.0.2rc-112-ga5e885b/project/.github/dependabot.yml.jinja
 
 version: 2
 updates:
