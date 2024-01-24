@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@0.0.2rc-107-gfac08a7.
+# This file was generated from bswck/skeleton@0.0.2rc-108-g243acc3.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-107-gfac08a7/project/pyproject.toml.jinja
+# https://github.com/bswck/skeleton/tree/0.0.2rc-108-g243acc3/project/pyproject.toml.jinja
 
 [tool.poetry]
 name = "mempip"
@@ -24,9 +24,9 @@ python = ">=3.8,<3.13"
 [tool.poetry.group.dev.dependencies]
 
 [tool.poetry.group.dev-skeleton.dependencies]
-# This dependency group was generated from bswck/skeleton@0.0.2rc-107-gfac08a7.
+# This dependency group was generated from bswck/skeleton@0.0.2rc-108-g243acc3.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-107-gfac08a7/pyproject.toml
+# https://github.com/bswck/skeleton/tree/0.0.2rc-108-g243acc3/pyproject.toml
 mypy = "^1.7.0"
 ruff = "^0.1.12"
 towncrier = "^23.11.0"
@@ -53,7 +53,7 @@ mkdocstrings = { version = ">=0.19.0", extras = ["python"] }
 [tool.poe.tasks]
 test = "pytest -v"
 lint = "ruff check ."
-skeleton = "scripts/skeleton.0.0.2rc-107-gfac08a7.bash"
+skeleton = "scripts/skeleton.0.0.2rc-108-g243acc3.bash"
 check = [
     { ref="test" },
     { ref="lint" },
