@@ -1,0 +1,5 @@
+# This file was generated from bswck/skeleton@0.0.2rc-107-gfac08a7.
+# Instead of changing this particular file, you might want to alter the template:
+# https://github.com/bswck/skeleton/tree/0.0.2rc-107-gfac08a7/project/news/.gitignore.jinja
+
+!.gitignore

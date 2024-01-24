@@ -1,0 +1,176 @@
+# This file was generated from bswck/skeleton@0.0.2rc-107-gfac08a7.
+# Instead of changing this particular file, you might want to alter the template:
+# https://github.com/bswck/skeleton/tree/0.0.2rc-107-gfac08a7/project/pyproject.toml.jinja
+
+[tool.poetry]
+name = "mempip"
+version = "0.0.0"
+description = "Install Python packages into volatile memory."
+authors = ["bswck <bswck.dev@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{ include = "mempip/" }]
+homepage = "https://github.com/bswck/mempip"
+
+[tool.poetry.urls]
+Documentation = "https://mempip.readthedocs.io/en/latest/"
+Issues = "https://github.com/bswck/mempip/issues"
+Distribution = "https://pypi.org/project/mempip/"
+Coverage = "https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/mempip"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.group.dev-skeleton.dependencies]
+# This dependency group was generated from bswck/skeleton@0.0.2rc-107-gfac08a7.
+# Instead of changing this particular file, you might want to alter the template:
+# https://github.com/bswck/skeleton/tree/0.0.2rc-107-gfac08a7/pyproject.toml
+mypy = "^1.7.0"
+ruff = "^0.1.12"
+towncrier = "^23.11.0"
+coverage = "^7.4.0"
+pytest = "^7.4.3"
+pytest-doctestplus = "^1.1.0"
+covdefaults = "^2.3.0"
+poethepoet = "^0.24.3"
+pre-commit = "^3.5.0"
+smokeshow = "^0.4.0"
+keyring = "^24.3.0"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+markdown-exec = ">=1.3.0"
+mkdocs-material = ">=8.2,<10.0.0"
+mkdocstrings = { version = ">=0.19.0", extras = ["python"] }
+
+[tool.poe.tasks]
+test = "pytest -v"
+lint = "ruff check ."
+skeleton = "scripts/skeleton.0.0.2rc-107-gfac08a7.bash"
+check = [
+    { ref="test" },
+    { ref="lint" },
+]
+release.script = "scripts.release:main"
+
+[tool.poe.tasks.added]
+shell = "towncrier create $TICKET.added.md --edit"
+args = [{name = "TICKET", default = "+", positional = true}]
+
+[tool.poe.tasks.changed]
+shell = "towncrier create $TICKET.changed.md --edit"
+args = [{name = "TICKET", default = "+", positional = true}]
+
+[tool.poe.tasks.fixed]
+shell = "towncrier create $TICKET.fixed.md --edit"
+args = [{name = "TICKET", default = "+", positional = true}]
+
+[tool.poe.tasks.deprecated]
+shell = "towncrier create $TICKET.deprecated.md --edit"
+args = [{name = "TICKET", default = "+", positional = true}]
+
+[tool.poe.tasks.removed]
+shell = "towncrier create $TICKET.removed.md --edit"
+args = [{name = "TICKET", default = "+", positional = true}]
+
+[tool.poe.tasks.security]
+shell = "towncrier create $TICKET.security.md --edit"
+args = [{name = "TICKET", default = "+", positional = true}]
+
+[tool.ruff]
+exclude = ["tests/", "scripts/"]
+# To discuss the presented rationales, contact the author (bswck).
+select = ["ALL"]
+ignore = [
+    # Description: Missing type annotation for self in method
+    # Rationale: It is mostly redundant, as is for ANN102.
+    "ANN101",
+
+    # Description: Missing type annotation for cls in method
+    # Rationale: It is mostly redundant, as is for ANN101.
+    "ANN102",
+
+    # Description: Dynamically typed expressions (typing.Any) are disallowed
+    # Rationale:
+    #  We use Any to allow user to constrain return types of our functions on their own.
+    #  For example, having a function `def foo() -> Any: ...` allows user to write
+    #  `my_foo: int = foo()` and have it passed type checking, since `Any` disables
+    #  type checking completely.
+    "ANN401",
+
+    # Description: 1 blank line required before class docstring
+    # Rationale: Remove the warning -- D211 (no-blank-line-before-class) preferred.
+    "D203",
+
+    # Description: Multi-line docstring summary should start at the second line
+    # Rationale: Remove the warning -- D213 (multi-line-summary-second-line) preferred.
+    "D212",
+
+    # Description: Line contains TODO, consider resolving the issue
+    # Rationale: Not appropriate for the project.
+    "FIX002",
+]
+
+[tool.mypy]
+strict = true
+
+[tool.isort]
+profile = "black"
+
+[tool.towncrier]
+directory = "news"
+package = "mempip"
+filename = "CHANGELOG.md"
+start_string = "<!-- insertion marker -->\n"
+underlines = ["", "", ""]  # We use Markdown
+title_format = "## [{version}](https://github.com/bswck/mempip/tree/{version}) ({project_date})"
+issue_format = "[#{issue}](https://github.com/bswck/mempip/issues/{issue})"
+
+[[tool.towncrier.type]]
+directory = "security"
+name = "Security"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[tool.coverage.run]
+plugins = ["covdefaults"]
+source = ["mempip/"]
+relative_files = true
+
+[tool.coverage.report]
+fail_under = 90
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
