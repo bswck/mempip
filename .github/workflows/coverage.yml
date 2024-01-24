@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@0.0.2rc-113-gc922726.
+# This file was generated from bswck/skeleton@0.0.2rc-114-g397815c.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-113-gc922726/project/.github/workflows/%23%25%20if%20tests%20and%20public%20%25%23coverage.yml%23%25%20endif%20%25%23.jinja
+# https://github.com/bswck/skeleton/tree/0.0.2rc-114-g397815c/project/.github/workflows/%23%25%20if%20tests%20and%20public%20%25%23coverage.yml%23%25%20endif%20%25%23.jinja
 
 # IMPORTANT!
 # Pinned versions of actions and Poetry are managed in a different repository.
@@ -36,17 +36,23 @@ jobs:
       env:
         GH_TOKEN: "${{github.token}}"
     - run: "poetry run coverage combine --append .covfiles/*"
+    - name: "Upload coverage data file"
+      uses: "actions/upload-artifact@v4"
+      with:
+        name: "coverage"
+        path: ".coverage"
+    - run: "poetry run coverage xml --fail-under=0"
+    - name: "Upload coverage XML report"
+      uses: "actions/upload-artifact@v4"
+      with:
+        name: "coverage-xml"
+        path: "coverage.xml"
     - run: >
         poetry run coverage html
         --fail-under=0
         --directory=.covhtml/
         --show-contexts
         --title "mempip coverage for ${{github.sha}}"
-    - name: "Upload coverage data file"
-      uses: "actions/upload-artifact@v4"
-      with:
-        name: "coverage"
-        path: ".coverage"
     - name: "Upload coverage HTML report"
       uses: "actions/upload-artifact@v4"
       with:
@@ -62,10 +68,12 @@ jobs:
     - uses: "actions/checkout@v4"
     - uses: "actions/download-artifact@v4"
       with:
-        name: "coverage"
+        name: "coverage-xml"
         merge-multiple: true
     - name: "Upload coverage reports to Codecov"
       uses: "codecov/codecov-action@HEAD"
+      with:
+        files: "coverage.xml"
       env:
         CODECOV_TOKEN: "${{secrets.CODECOV_TOKEN}}"
 
