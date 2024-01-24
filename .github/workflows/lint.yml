@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@0.0.2rc-112-ga5e885b.
+# This file was generated from bswck/skeleton@0.0.2rc-113-gc922726.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-112-ga5e885b/project/.github/workflows/lint.yml.jinja
+# https://github.com/bswck/skeleton/tree/0.0.2rc-113-gc922726/project/.github/workflows/lint.yml.jinja
 
 # IMPORTANT!
 # Pinned versions of actions and Poetry are managed in a different repository.
