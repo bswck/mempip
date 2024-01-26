@@ -1,4 +1,4 @@
-# mempip [![skeleton](https://img.shields.io/badge/0.0.2rc–114–g397815c-skeleton?label=%F0%9F%92%80%20bswck/skeleton&labelColor=black&color=grey&link=https%3A//github.com/bswck/skeleton)](https://github.com/bswck/skeleton/tree/0.0.2rc-114-g397815c) [![Supported Python versions](https://img.shields.io/pypi/pyversions/mempip.svg?logo=python&label=Python)](https://pypi.org/project/mempip/) [![Package version](https://img.shields.io/pypi/v/mempip?label=PyPI)](https://pypi.org/project/mempip/)
+# mempip [![skeleton](https://img.shields.io/badge/0.0.2rc–116–gaf71a4b-skeleton?label=%F0%9F%92%80%20bswck/skeleton&labelColor=black&color=grey&link=https%3A//github.com/bswck/skeleton)](https://github.com/bswck/skeleton/tree/0.0.2rc-116-gaf71a4b) [![Supported Python versions](https://img.shields.io/pypi/pyversions/mempip.svg?logo=python&label=Python)](https://pypi.org/project/mempip/) [![Package version](https://img.shields.io/pypi/v/mempip?label=PyPI)](https://pypi.org/project/mempip/)
 
 [![Tests](https://github.com/bswck/mempip/actions/workflows/test.yml/badge.svg)](https://github.com/bswck/mempip/actions/workflows/test.yml)
 [![Coverage](https://coverage-badge.samuelcolvin.workers.dev/bswck/mempip.svg)](https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/mempip)
@@ -30,9 +30,9 @@ poetry add mempip
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 <!--
-This section was generated from bswck/skeleton@0.0.2rc-114-g397815c.
+This section was generated from bswck/skeleton@0.0.2rc-116-gaf71a4b.
 Instead of changing this particular file, you might want to alter the template:
-https://github.com/bswck/skeleton/tree/0.0.2rc-114-g397815c/project/README.md.jinja
+https://github.com/bswck/skeleton/tree/0.0.2rc-116-gaf71a4b/project/README.md.jinja
 -->
 > [!Note]
 > If you use Windows, it is highly recommended to complete the installation in the way presented below through [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install).
