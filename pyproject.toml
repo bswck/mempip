@@ -1,6 +1,6 @@
-# This file was generated from bswck/skeleton@0.0.2rc-116-gaf71a4b.
+# This file was generated from bswck/skeleton@0.0.2rc-210-g3b97536.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-116-gaf71a4b/project/pyproject.toml.jinja
+# https://github.com/bswck/skeleton/tree/0.0.2rc-210-g3b97536/project/pyproject.toml.jinja
 
 [tool.poetry]
 name = "mempip"
@@ -25,20 +25,20 @@ pip-tools = "^7.3.0"
 [tool.poetry.group.dev.dependencies]
 
 [tool.poetry.group.dev-skeleton.dependencies]
-# This dependency group was generated from bswck/skeleton@0.0.2rc-116-gaf71a4b.
+# This dependency group was generated from bswck/skeleton@0.0.2rc-210-g3b97536.
 # Instead of changing this particular file, you might want to alter the template:
-# https://github.com/bswck/skeleton/tree/0.0.2rc-116-gaf71a4b/pyproject.toml
-mypy = "^1.7.0"
-ruff = "^0.1.12"
-towncrier = "^23.11.0"
-coverage = "^7.4.0"
-pytest = "^7.4.3"
-pytest-doctestplus = "^1.1.0"
-covdefaults = "^2.3.0"
-poethepoet = "^0.24.3"
-pre-commit = "^3.5.0"
-smokeshow = "^0.4.0"
-keyring = "^24.3.0"
+# https://github.com/bswck/skeleton/tree/0.0.2rc-210-g3b97536/project/pyproject.toml.jinja
+mypy = ">=1.9.0"
+ruff = ">=0.3.4"
+towncrier = ">=23.11.0"
+coverage = "^7.4.4"
+pytest = "^8.1.1"
+pytest-doctestplus = "^1.2.1"
+covdefaults = ">=2.3.0"
+poethepoet = ">=0.25.0"
+pre-commit = "<3.6.0"
+smokeshow = ">=0.4.0"
+keyring = "^25.0.0"
 
 [tool.pytest.ini_options]
 addopts = "--doctest-modules"
@@ -54,7 +54,7 @@ mkdocstrings = { version = ">=0.19.0", extras = ["python"] }
 [tool.poe.tasks]
 test = "pytest -v"
 lint = "ruff check ."
-skeleton = "scripts/skeleton.0.0.2rc-116-gaf71a4b.bash"
+skeleton = "scripts/skeleton.0.0.2rc-210-g3b97536.bash"
 check = [
     { ref="test" },
     { ref="lint" },
@@ -87,6 +87,8 @@ args = [{name = "TICKET", default = "+", positional = true}]
 
 [tool.ruff]
 exclude = ["tests/", "scripts/"]
+
+[tool.ruff.lint]
 # To discuss the presented rationales, contact the author (bswck).
 select = ["ALL"]
 ignore = [
@@ -119,11 +121,11 @@ ignore = [
     "FIX002",
 ]
 
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
 [tool.mypy]
 strict = true
-
-[tool.isort]
-profile = "black"
 
 [tool.towncrier]
 directory = "news"

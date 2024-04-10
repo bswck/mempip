@@ -1,4 +1,4 @@
-_commit: 0.0.2rc-116-gaf71a4b
+_commit: 0.0.2rc-210-g3b97536
 _src_path: gh:bswck/skeleton
 author: bswck
 cli: false
@@ -12,11 +12,13 @@ package: mempip
 precommit: true
 pypi: true
 pypi_description: Install Python packages into volatile memory.
-pypi_project_name: mempip
+pypi_project: mempip
 pypy: true
 python: '3.8'
+python_until: '3.13'
 repo: mempip
 rtd: mempip
 tests: true
+tidelift: false
 visibility: public
 wip: true
