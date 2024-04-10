@@ -5,7 +5,7 @@ cli: false
 copyright: Bartosz Sławecki
 description: Install Python packages into volatile memory.
 docs: true
-email: bswck.dev@gmail.com
+email: bartoszpiotrslawecki@gmail.com
 github: bswck
 license: GPL-3.0
 package: mempip
@@ -15,7 +15,7 @@ pypi_description: Install Python packages into volatile memory.
 pypi_project: mempip
 pypy: true
 python: '3.8'
-python_until: '3.13'
+python_until: ''
 repo: mempip
 rtd: mempip
 tests: true
